@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define glassmorphic utility class */
+
+* {
+  scroll-behavior: smooth;
+  /* background-color: #fff; */
+}
+
+/* @layer utilities {
+  .glassmorphic {
+    @apply backdrop-blur-md bg-glass border border-white/20 rounded-lg;
+  }
+} */
+
+.active hr {
+  @apply block;
+}
