@@ -65,7 +65,7 @@ const InteractiveBanner = () => {
                     {/* content */}
                     <div className="bg-slate-900 rounded-lg overflow-hidden">
                         {showPreview ? (
-                            <div className="">
+                            <div className="hidden">
                                 <div>
                                     <img
                                         src={hoveredIndex !== null ? items[hoveredIndex].img : items[0].img}
@@ -113,6 +113,11 @@ const InteractiveBanner = () => {
                                                 </div>
                                             </a>
                                         ))}
+                                    </div>
+
+                                    {/* tablet view design */}
+                                    <div>
+
                                     </div>
                                 </div>
                             </div>
