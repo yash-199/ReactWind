@@ -3,8 +3,17 @@ import { FaRegEye, FaCode } from "react-icons/fa";
 import image1 from '../assets/BannerUI-Image/thumbslider-1.webp';
 import image2 from '../assets/BannerUI-Image/thumbslider-2.webp';
 import image3 from '../assets/BannerUI-Image/thumbslider-3.webp';
+import { IoCopy } from "react-icons/io5";
+
 const CardCompImg = () => {
     const [showPreview, setShowPreview] = useState(true);
+    const CopyCode = () => {
+        const textToCopy = document.getElementById('CopyCode').innerText;
+        navigator.clipboard
+            .writeText(textToCopy)
+            .then(() => alert('Code copied successfully!'))
+            .catch(() => alert('Failed to copy!'));
+    };
     return (
         <>
             <div className="py-2">
@@ -37,80 +46,170 @@ const CardCompImg = () => {
                     </div>
 
                     {/* Content */}
-                    <div className="bg-slate-900 rounded-lg overflow-hidden py-24">
+                    <div className="bg-slate-900 rounded-lg overflow-hidden py-2">
                         {/* card */}
-                        <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-between items-center gap-4 px-4">
-                            <div className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
-                                <div className="relative -top-14 left-1/2 transform -translate-x-1/2">
-                                    <img
-                                        src={image1}
-                                        alt="Component Preview"
-                                        className="w-full h-56 object-cover rounded-md"
-                                    />
+                        {showPreview ? (
+                            <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-between items-center gap-4 px-4">
+                                <div className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
+                                    <div className="relative -top-14 left-1/2 transform -translate-x-1/2">
+                                        <img
+                                            src={image1}
+                                            alt="Component Preview"
+                                            className="w-full h-56 object-cover rounded-md"
+                                        />
+                                    </div>
+                                    <div className=" text-center">
+                                        <h2 className="text-lg font-semibold text-black">
+                                            ReactWind: Best Website for Components
+                                        </h2>
+                                        <p className="text-sm text-gray-600 mt-2 text-justify">
+                                            Tailwind CSS Cards by ReactWind offer a modern, responsive way to showcase
+                                            content on your website. With industry-standard designs and multiple
+                                            options, these cards enhance user experience and add value to your
+                                            landing pages.
+                                        </p>
+                                        <button className="mt-4 bg-black text-white text-md px-4 py-2 rounded-md  transition-transform transform hover:-translate-y-1">
+                                            Find Out More
+                                        </button>
+                                    </div>
                                 </div>
-                                <div className=" text-center">
-                                    <h2 className="text-lg font-semibold text-black">
-                                        ReactWind: Best Website for Components
-                                    </h2>
-                                    <p className="text-sm text-gray-600 mt-2 text-justify">
-                                        Tailwind CSS Cards by ReactWind offer a modern, responsive way to showcase
-                                        content on your website. With industry-standard designs and multiple
-                                        options, these cards enhance user experience and add value to your
-                                        landing pages.
-                                    </p>
-                                    <button className="mt-4 bg-black text-white text-md px-4 py-2 rounded-md  transition-transform transform hover:-translate-y-1">
-                                        Find Out More
-                                    </button>
+                                <div className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
+                                    <div className="relative -top-14 left-1/2 transform -translate-x-1/2">
+                                        <img
+                                            src={image2}
+                                            alt="Component Preview"
+                                            className="w-full h-56 object-cover rounded-md"
+                                        />
+                                    </div>
+                                    <div className=" text-center">
+                                        <h2 className="text-lg font-semibold text-black">
+                                            ReactWind: Best Website for Components
+                                        </h2>
+                                        <p className="text-sm text-gray-600 mt-2 text-justify">
+                                            Tailwind CSS Cards by ReactWind offer a modern, responsive way to showcase
+                                            content on your website. With industry-standard designs and multiple
+                                            options, these cards enhance user experience and add value to your
+                                            landing pages.
+                                        </p>
+                                        <button className="mt-4 bg-black text-white text-md px-4 py-2 rounded-md  transition-transform transform hover:-translate-y-1">
+                                            Find Out More
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
+                                    <div className="relative -top-14 left-1/2 transform -translate-x-1/2">
+                                        <img
+                                            src={image3}
+                                            alt="Component Preview"
+                                            className="w-full h-56 object-cover rounded-md"
+                                        />
+                                    </div>
+                                    <div className=" text-center">
+                                        <h2 className="text-lg font-semibold text-black">
+                                            ReactWind: Best Website for Components
+                                        </h2>
+                                        <p className="text-sm text-gray-600 mt-2 text-justify">
+                                            Tailwind CSS Cards by ReactWind offer a modern, responsive way to showcase
+                                            content on your website. With industry-standard designs and multiple
+                                            options, these cards enhance user experience and add value to your
+                                            landing pages.
+                                        </p>
+                                        <button className="mt-4 bg-black text-white text-md px-4 py-2 rounded-md  transition-transform transform hover:-translate-y-1">
+                                            Find Out More
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
-                                <div className="relative -top-14 left-1/2 transform -translate-x-1/2">
-                                    <img
-                                        src={image1}
-                                        alt="Component Preview"
-                                        className="w-full h-56 object-cover rounded-md"
+                        ) : (
+                            <div
+                                className="p-4 sm:p-6 h-full sm:h-96 text-justify overflow-y-auto text-xs sm:text-sm text-indigo-100 bg-transparent whitespace-pre-wrap break-words"
+                                id="CopyCode"
+                            >
+                                <div className="flex justify-end mb-2">
+                                    <IoCopy
+                                        className="cursor-pointer text-white hover:text-blue-400"
+                                        onClick={CopyCode}
+                                        title="Copy Code"
                                     />
                                 </div>
-                                <div className=" text-center">
-                                    <h2 className="text-lg font-semibold text-black">
-                                        ReactWind: Best Website for Components
-                                    </h2>
-                                    <p className="text-sm text-gray-600 mt-2 text-justify">
-                                        Tailwind CSS Cards by ReactWind offer a modern, responsive way to showcase
-                                        content on your website. With industry-standard designs and multiple
-                                        options, these cards enhance user experience and add value to your
-                                        landing pages.
-                                    </p>
-                                    <button className="mt-4 bg-black text-white text-md px-4 py-2 rounded-md  transition-transform transform hover:-translate-y-1">
-                                        Find Out More
-                                    </button>
-                                </div>
+                                {`
+<div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-between items-center gap-4 px-4">
+<div className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
+ <div className="relative -top-14 left-1/2 transform -translate-x-1/2">
+     <img
+         src={image1}
+         alt="Component Preview"
+         className="w-full h-56 object-cover rounded-md"
+     />
+ </div>
+ <div className=" text-center">
+     <h2 className="text-lg font-semibold text-black">
+         ReactWind: Best Website for Components
+     </h2>
+     <p className="text-sm text-gray-600 mt-2 text-justify">
+         Tailwind CSS Cards by ReactWind offer a modern, responsive way to showcase
+         content on your website. With industry-standard designs and multiple
+         options, these cards enhance user experience and add value to your
+         landing pages.
+     </p>
+     <button className="mt-4 bg-black text-white text-md px-4 py-2 rounded-md  transition-transform transform hover:-translate-y-1">
+         Find Out More
+     </button>
+ </div>
+v>
+ className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
+<div className="relative -top-14 left-1/2 transform -translate-x-1/2">
+    <img
+        src={image2}
+        alt="Component Preview"
+        className="w-full h-56 object-cover rounded-md"
+    />
+</div>
+<div className=" text-center">
+    <h2 className="text-lg font-semibold text-black">
+        ReactWind: Best Website for Components
+    </h2>
+    <p className="text-sm text-gray-600 mt-2 text-justify">
+        Tailwind CSS Cards by ReactWind offer a modern, responsive way to showcase
+        content on your website. With industry-standard designs and multiple
+        options, these cards enhance user experience and add value to your
+        landing pages.
+    </p>
+    <button className="mt-4 bg-black text-white text-md px-4 py-2 rounded-md  transition-transform transform hover:-translate-y-1">
+        Find Out More
+    </button>
+</div>
+</div>
+<div className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
+<div className="relative -top-14 left-1/2 transform -translate-x-1/2">
+    <img
+        src={image3}
+        alt="Component Preview"
+        className="w-full h-56 object-cover rounded-md"
+    />
+</div>
+<div className=" text-center">
+    <h2 className="text-lg font-semibold text-black">
+        ReactWind: Best Website for Components
+    </h2>
+    <p className="text-sm text-gray-600 mt-2 text-justify">
+        Tailwind CSS Cards by ReactWind offer a modern, responsive way to showcase
+        content on your website. With industry-standard designs and multiple
+        options, these cards enhance user experience and add value to your
+        landing pages.
+    </p>
+    <button className="mt-4 bg-black text-white text-md px-4 py-2 rounded-md  transition-transform transform hover:-translate-y-1">
+        Find Out More
+    </button>
+</div>
+     </div>
+ </div>  
+                                `}
                             </div>
-                            <div className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
-                                <div className="relative -top-14 left-1/2 transform -translate-x-1/2">
-                                    <img
-                                        src={image1}
-                                        alt="Component Preview"
-                                        className="w-full h-56 object-cover rounded-md"
-                                    />
-                                </div>
-                                <div className=" text-center">
-                                    <h2 className="text-lg font-semibold text-black">
-                                        ReactWind: Best Website for Components
-                                    </h2>
-                                    <p className="text-sm text-gray-600 mt-2 text-justify">
-                                        Tailwind CSS Cards by ReactWind offer a modern, responsive way to showcase
-                                        content on your website. With industry-standard designs and multiple
-                                        options, these cards enhance user experience and add value to your
-                                        landing pages.
-                                    </p>
-                                    <button className="mt-4 bg-black text-white text-md px-4 py-2 rounded-md  transition-transform transform hover:-translate-y-1">
-                                        Find Out More
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        )}
                     </div>
+
+
                 </div>
             </div>
         </>
