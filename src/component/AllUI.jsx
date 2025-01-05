@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 const AllUI = () => {
     return (
-        <div className="px-10 py-5">
+        <div className="px-4 py-5">
             <p className="text-white text-4xl font-mono font-semibold">Application UI</p>
             <p className="my-5 text-white text-lg text-justify">
                 Build complete web applications with our collection of stunning Tailwind UI components

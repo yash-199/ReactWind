@@ -49,7 +49,7 @@ const CardCompImg = () => {
                     <div className="bg-slate-900 rounded-lg overflow-hidden py-2">
                         {/* card */}
                         {showPreview ? (
-                            <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-between items-center gap-4 px-4">
+                            <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-between items-center gap-4 px-4 py-20">
                                 <div className="bg-white border-2 border-gray-200 shadow-md rounded-md p-4 max-w-sm mx-auto mb-20">
                                     <div className="relative -top-14 left-1/2 transform -translate-x-1/2">
                                         <img

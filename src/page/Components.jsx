@@ -10,7 +10,7 @@ const Components = () => {
     const isBaseRoute = location.pathname === '/components'; // Adjust the base route as needed
 
     return (
-        <div className="pt-20 px-10 h-full">
+        <div className="pt-20 px-4 h-full">
             <div className="m-auto text-white text-center">
                 <p className="mt-20 mb-6 text-4xl font-semibold font-serif leading-relaxed">
                     React Tailwind CSS UI Components, <br /> Blocks and Templates to Build Faster!
