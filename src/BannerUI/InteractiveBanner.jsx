@@ -32,7 +32,7 @@ const InteractiveBanner = () => {
 
     return (
         <>
-            <div className="text-white mt-20">
+            <div className="text-white mt-20 overflow-x-hidden">
                 <div className="flex flex-col justify-between px-0">
                     <p className="text-white text-4xl font-mono font-semibold">Banner</p>
                     <p className="my-5 text-white text-lg text-justify">

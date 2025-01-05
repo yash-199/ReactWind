@@ -45,12 +45,13 @@ const Sidebar = () => {
                                             }`
                                         }
                                     >
-                                        <li>Banner</li>
+                                        <li className='flex justify-between items-center'>Banner <span>2</span></li>
                                     </NavLink>
-                                    <li className="py-1">Banner Slider</li>
-                                    <li className="py-1">Card Slider</li>
-                                    <li className="py-1">Card</li>
-                                    <li className="py-1">Blog</li>
+
+                                    <NavLink to="/components/Card" className={({ isActive }) => `block py-2 px-4 rounded-md text-white ${isActive ? 'bg-blue-500 text-white' : "hover:bg-gray-600"}`}>
+                                        <li className="py-1 flex justify-between items-center">Card<span>8</span></li>
+                                    </NavLink>
+
                                 </ul>
                             </motion.div>
                         )}

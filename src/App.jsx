@@ -6,6 +6,7 @@ import Navbar from './component/Navbar.jsx';
 import Footer from './component/Footer.jsx';
 import AppUINavbar from './component/ApplicationUI/AppUINavbar.jsx';
 import AppUIBanner from './component/ApplicationUI/AppUIBanner.jsx';
+import AppCardUI from './component/ApplicationUI/AppCardUI.jsx';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/components" element={<Components />}>
           <Route path="Navbar" element={<AppUINavbar />} />
           <Route path="Banner" element={<AppUIBanner />} />
+          <Route path="Card" element={<AppCardUI />} />
           {/* Add more child routes as needed */}
         </Route>
       </Routes>
