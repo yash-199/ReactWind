@@ -3,7 +3,7 @@ import InteractiveBanner from "../../BannerUI/InteractiveBanner"
 
 const AppUIBanner = () => {
     return (
-        <div className="px-10">
+        <div className="px-2">
             <Banner />
             <InteractiveBanner />
         </div>
