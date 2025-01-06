@@ -1,5 +1,6 @@
 import BlogCard from "../../CardUI/BlogCard"
 import CardCompImg from "../../CardUI/CardCompImg"
+import CardWAuthorImg from "../../CardUI/CardWAuthorImg"
 import ImgCardwTitndDesc from "../../CardUI/ImgCardwTitndDesc"
 
 const AppCardUI = () => {
@@ -10,6 +11,7 @@ const AppCardUI = () => {
             <CardCompImg />
             <BlogCard />
             <ImgCardwTitndDesc />
+            <CardWAuthorImg />
         </div>
     )
 }

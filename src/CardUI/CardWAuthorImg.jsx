@@ -1,12 +1,10 @@
-import { FaRegEye, FaCode } from "react-icons/fa";
-import image1 from '../assets/BannerUI-Image/full-screen-1.webp';
-import image2 from '../assets/BannerUI-Image/full-screen-2.webp';
-import image3 from '../assets/BannerUI-Image/full-screen-3.webp';
 import { IoCopy } from "react-icons/io5";
+import { FaRegEye, FaCode } from "react-icons/fa";
+import image1 from '../assets/BannerUI-Image/full-screen-4.webp'
+import profile1 from '../assets/BannerUI-Image/profile1.png'
 import { useState } from 'react';
-const ImgCardwTitndDesc = () => {
-    const [showPreview, setShowPreview] = useState(true);
-
+const CardWAuthorImg = () => {
+    const [showPreview, setShowPreview] = useState(true)
     const copyCardCode = () => {
         const copyCode = document.getElementById('CardCode').innerText;
         navigator.clipboard.writeText(copyCode)
@@ -14,9 +12,13 @@ const ImgCardwTitndDesc = () => {
     };
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Image Card with Title and Description</h1>
-            <p className="text-lg text-justify">This sleek and modern card component highlights key content. It features an image at the top, followed by a bold title and a paragraph. Ideal for showcasing various types of content, such as blog posts, portfolio items, or product features, this card layout ensures a visually engaging presentation that captures attention.
-            </p>
+            <h1 className="font-semibold text-2xl mt-4">Card with Author Image</h1>
+            <p className="text-lg text-justify">A visually appealing card component that
+                highlights key content details such as a title and description,
+                along with the author information and an image. This layout is
+                perfect for blog posts, articles, or content pieces where
+                showcasing the author profile adds credibility.</p>
+
             <div className="py-4 px-4 mt-6 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* Header */}
                 <div className="flex justify-between items-center mb-4">
@@ -49,25 +51,49 @@ const ImgCardwTitndDesc = () => {
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 px-4 gap-4">
                             <div
                                 className="border-2 border-white py-2 px-2 rounded-md"
-                                style={{ boxShadow: '0 4px 6px 0 rgba(255, 255, 255, 0.6)' }}
+                                style={{ boxShadow: '1px 1px 1px 1px rgba(255, 255, 255, 0.6)' }}
                             >
-                                <img src={image1} alt="" className="rounded-md py-2" />
+                                {/* Author Name and position */}
+                                <div className="flex items-center gap-2">
+                                    <img src={profile1} className="w-20 rounded-full" alt="" />
+                                    <div>
+                                        <p>Sten Thomas</p>
+                                        <p>Frontend Developer</p>
+                                    </div>
+                                </div>
+                                <img src={image1} className="w-full rounded-md py-1 px-1" alt="" />
                                 <h1 className="text-justify font-bold text-xl">Card Title Here</h1>
                                 <p className="text-justify text-md py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse, harum iure a repudiandae magnam hic cupiditate id nam reprehenderit voluptate numquam magni sapiente excepturi amet maxime nostrum, in recusandae.</p>
                             </div>
                             <div
                                 className="border-2 border-white py-2 px-2 rounded-md"
-                                style={{ boxShadow: '0 4px 6px 0 rgba(255, 255, 255, 0.6)' }}
+                                style={{ boxShadow: '1px 1px 1px 1px rgba(255, 255, 255, 0.6)' }}
                             >
-                                <img src={image2} alt="" className="rounded-md py-2" />
+                                {/* Author Name and position */}
+                                <div className="flex items-center gap-2">
+                                    <img src={profile1} className="w-20 rounded-full" alt="" />
+                                    <div>
+                                        <p>Sten Thomas</p>
+                                        <p>Frontend Developer</p>
+                                    </div>
+                                </div>
+                                <img src={image1} className="w-full rounded-md py-1 px-1" alt="" />
                                 <h1 className="text-justify font-bold text-xl">Card Title Here</h1>
                                 <p className="text-justify text-md py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse, harum iure a repudiandae magnam hic cupiditate id nam reprehenderit voluptate numquam magni sapiente excepturi amet maxime nostrum, in recusandae.</p>
                             </div>
                             <div
                                 className="border-2 border-white py-2 px-2 rounded-md"
-                                style={{ boxShadow: '0 4px 6px 0 rgba(255, 255, 255, 0.6)' }}
+                                style={{ boxShadow: '1px 1px 1px 1px rgba(255, 255, 255, 0.6)' }}
                             >
-                                <img src={image3} alt="" className="rounded-md py-2" />
+                                {/* Author Name and position */}
+                                <div className="flex items-center gap-2">
+                                    <img src={profile1} className="w-20 rounded-full" alt="" />
+                                    <div>
+                                        <p>Sten Thomas</p>
+                                        <p>Frontend Developer</p>
+                                    </div>
+                                </div>
+                                <img src={image1} className="w-full rounded-md py-1 px-1" alt="" />
                                 <h1 className="text-justify font-bold text-xl">Card Title Here</h1>
                                 <p className="text-justify text-md py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse, harum iure a repudiandae magnam hic cupiditate id nam reprehenderit voluptate numquam magni sapiente excepturi amet maxime nostrum, in recusandae.</p>
                             </div>
@@ -81,28 +107,52 @@ const ImgCardwTitndDesc = () => {
                                     title="Copy Code"
                                 />
                             </div>
-                            {`<div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 px-4 gap-4">
+                            {` <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 px-4 gap-4">
                             <div
                                 className="border-2 border-white py-2 px-2 rounded-md"
-                                style={{ boxShadow: '0 4px 6px 0 rgba(255, 255, 255, 0.6)' }}
+                                style={{ boxShadow: '1px 1px 1px 1px rgba(255, 255, 255, 0.6)' }}
                             >
-                                <img src={image1} alt="" className="rounded-md py-2" />
+                                {/* Author Name and position */}
+                                <div className="flex items-center gap-2">
+                                    <img src={profile1} className="w-20 rounded-full" alt="" />
+                                    <div>
+                                        <p>Sten Thomas</p>
+                                        <p>Frontend Developer</p>
+                                    </div>
+                                </div>
+                                <img src={image1} className="w-full rounded-md py-1 px-1" alt="" />
                                 <h1 className="text-justify font-bold text-xl">Card Title Here</h1>
                                 <p className="text-justify text-md py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse, harum iure a repudiandae magnam hic cupiditate id nam reprehenderit voluptate numquam magni sapiente excepturi amet maxime nostrum, in recusandae.</p>
                             </div>
                             <div
                                 className="border-2 border-white py-2 px-2 rounded-md"
-                                style={{ boxShadow: '0 4px 6px 0 rgba(255, 255, 255, 0.6)' }}
+                                style={{ boxShadow: '1px 1px 1px 1px rgba(255, 255, 255, 0.6)' }}
                             >
-                                <img src={image2} alt="" className="rounded-md py-2" />
+                                {/* Author Name and position */}
+                                <div className="flex items-center gap-2">
+                                    <img src={profile1} className="w-20 rounded-full" alt="" />
+                                    <div>
+                                        <p>Sten Thomas</p>
+                                        <p>Frontend Developer</p>
+                                    </div>
+                                </div>
+                                <img src={image1} className="w-full rounded-md py-1 px-1" alt="" />
                                 <h1 className="text-justify font-bold text-xl">Card Title Here</h1>
                                 <p className="text-justify text-md py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse, harum iure a repudiandae magnam hic cupiditate id nam reprehenderit voluptate numquam magni sapiente excepturi amet maxime nostrum, in recusandae.</p>
                             </div>
                             <div
                                 className="border-2 border-white py-2 px-2 rounded-md"
-                                style={{ boxShadow: '0 4px 6px 0 rgba(255, 255, 255, 0.6)' }}
+                                style={{ boxShadow: '1px 1px 1px 1px rgba(255, 255, 255, 0.6)' }}
                             >
-                                <img src={image3} alt="" className="rounded-md py-2" />
+                                {/* Author Name and position */}
+                                <div className="flex items-center gap-2">
+                                    <img src={profile1} className="w-20 rounded-full" alt="" />
+                                    <div>
+                                        <p>Sten Thomas</p>
+                                        <p>Frontend Developer</p>
+                                    </div>
+                                </div>
+                                <img src={image1} className="w-full rounded-md py-1 px-1" alt="" />
                                 <h1 className="text-justify font-bold text-xl">Card Title Here</h1>
                                 <p className="text-justify text-md py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse, harum iure a repudiandae magnam hic cupiditate id nam reprehenderit voluptate numquam magni sapiente excepturi amet maxime nostrum, in recusandae.</p>
                             </div>
@@ -115,4 +165,4 @@ const ImgCardwTitndDesc = () => {
     )
 }
 
-export default ImgCardwTitndDesc
+export default CardWAuthorImg
