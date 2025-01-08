@@ -2,6 +2,7 @@ import BlogCard from "../../CardUI/BlogCard"
 import CardCompImg from "../../CardUI/CardCompImg"
 import CardWAuthorImg from "../../CardUI/CardWAuthorImg"
 import CardWithBenBut from "../../CardUI/CardWithBenBut"
+import ContentCardWAuthorImage from "../../CardUI/ContentCardWAuthorImage"
 import ImgCardwTitndDesc from "../../CardUI/ImgCardwTitndDesc"
 import PricingCard from "../../CardUI/PricingCard"
 import ZigZagCardImg from "../../CardUI/ZigZagCardImg"
@@ -18,6 +19,7 @@ const AppCardUI = () => {
             <PricingCard />
             <CardWithBenBut />
             <ZigZagCardImg />
+            <ContentCardWAuthorImage />
         </div>
     )
 }
