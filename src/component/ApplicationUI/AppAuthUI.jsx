@@ -1,6 +1,7 @@
 import AuthWithShowPassword from "../../AuthUI/AuthWithShowPassword"
 import NormalAuth from "../../AuthUI/NormalAuth"
 import SignInAuthWithSocialIcon from "../../AuthUI/SignInAuthWithSocialIcon"
+import SplitScreenWithLogin from "../../AuthUI/SplitScreenWithLogin"
 
 const AppAuthUI = () => {
     return (
@@ -10,6 +11,7 @@ const AppAuthUI = () => {
             <NormalAuth />
             <AuthWithShowPassword />
             <SignInAuthWithSocialIcon />
+            <SplitScreenWithLogin />
         </div>
     )
 }
