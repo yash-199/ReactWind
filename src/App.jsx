@@ -8,6 +8,7 @@ import AppUINavbar from './component/ApplicationUI/AppUINavbar.jsx';
 import AppUIBanner from './component/ApplicationUI/AppUIBanner.jsx';
 import AppCardUI from './component/ApplicationUI/AppCardUI.jsx';
 import AppAuthUI from './component/ApplicationUI/AppAuthUI.jsx';
+import AppCookieUI from './component/ApplicationUI/AppCookieUI.jsx';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="Banner" element={<AppUIBanner />} />
           <Route path="Card" element={<AppCardUI />} />
           <Route path="Auth" element={<AppAuthUI />} />
+          <Route path="Cookie" element={<AppCookieUI />} />
           {/* Add more child routes as needed */}
         </Route>
       </Routes>

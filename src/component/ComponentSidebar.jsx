@@ -54,6 +54,9 @@ const Sidebar = () => {
                                     <NavLink to="/components/Auth" className={({ isActive }) => `block py-2 px-4 rounded-md text-white ${isActive ? 'bg-blue-500 text-white' : "hover:bg-gray-600"}`}>
                                         <li className="py-1 flex justify-between items-center">Authentication<span>8</span></li>
                                     </NavLink>
+                                    <NavLink to="/components/Cookie" className={({ isActive }) => `block py-2 px-4 rounded-md text-white ${isActive ? 'bg-blue-500 text-white' : "hover:bg-gray-600"}`}>
+                                        <li className="py-1 flex justify-between items-center">Cookie<span>8</span></li>
+                                    </NavLink>
 
                                 </ul>
                             </motion.div>

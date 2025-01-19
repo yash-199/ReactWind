@@ -1,6 +1,10 @@
 import AuthWithShowPassword from "../../AuthUI/AuthWithShowPassword"
+import ConfirmPassword from "../../AuthUI/ConfirmPassword"
 import NormalAuth from "../../AuthUI/NormalAuth"
+import OTPScreen from "../../AuthUI/OTPScreen"
+import OTPwithResentCode from "../../AuthUI/OTPwithResentCode"
 import SignInAuthWithSocialIcon from "../../AuthUI/SignInAuthWithSocialIcon"
+import SignUpwithIllustration from "../../AuthUI/SignUpwithIllustration"
 import SplitScreenWithLogin from "../../AuthUI/SplitScreenWithLogin"
 
 const AppAuthUI = () => {
@@ -12,6 +16,10 @@ const AppAuthUI = () => {
             <AuthWithShowPassword />
             <SignInAuthWithSocialIcon />
             <SplitScreenWithLogin />
+            <SignUpwithIllustration />
+            <OTPScreen />
+            <OTPwithResentCode />
+            <ConfirmPassword />
         </div>
     )
 }
