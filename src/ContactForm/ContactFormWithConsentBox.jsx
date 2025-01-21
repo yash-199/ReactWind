@@ -6,6 +6,9 @@ import { MdAlternateEmail } from "react-icons/md";
 import { SiNamecheap } from "react-icons/si";
 import { MdOutlineAlternateEmail } from "react-icons/md"
 import { FiPhoneCall } from "react-icons/fi";
+import { FaFacebook } from "react-icons/fa6";
+import { LuInstagram } from "react-icons/lu";
+import { FaXTwitter } from "react-icons/fa6";
 const ContactFormWithConsentBox = () => {
     const [showPreview, setShowPreview] = useState(true);
     return (
@@ -39,7 +42,7 @@ const ContactFormWithConsentBox = () => {
                 <div className="bg-slate-900 rounded-lg overflow-hidden py-8 sm:px-8 px-2">
                     <div className='bg-white  sm:p-4 p-1 rounded-xl sm:px-10 px-2'>
                         <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 sm:mt-10 mt-4'>
-                            <p className='text-black sm:text-4xl text-lg font-medium font-serif sm:text-justify text-center'>Start Your Journey to Better Business</p>
+                            <p className='text-black sm:text-4xl text-lg font-medium font-serif sm:text-left text-center'>Start Your Journey to Better Business</p>
                             <div>
                                 <center>
                                     <FaLocationCrosshairs className='bg-[#FBC108] text-white text-center p-3 rounded-full text-6xl' />
@@ -62,10 +65,27 @@ const ContactFormWithConsentBox = () => {
                                 </center>
                             </div>
                         </div>
-                        <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4'>
-                            <div className='map mt-10'>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9934.186679009023!2d-0.11951900000000001!3d51.503186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1737475318776!5m2!1sen!2sus" className='w-full h-fit' style={{ "border": 0 }} allowfullscreen="" loading="lazy"></iframe>
+                        <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10'>
+                            <div className="map mt-10">
+                                <div className="relative overflow-hidden" style={{ paddingTop: "56.25%" }}>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9934.186679009023!2d-0.11951900000000001!3d51.503186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1737475318776!5m2!1sen!2sus"
+                                        className="absolute top-0 left-0 w-full h-full"
+                                        style={{ border: 0 }}
+                                        allowFullScreen=""
+                                        loading="lazy"
+                                    ></iframe>
+                                </div>
+                                <p className='text-black mt-5 text-2xl'>Follow Us</p>
+                                <p className='w-4 h-0.5 bg-black'></p>
+                                <div className="flex items-center space-x-4 py-4">
+                                    <FaFacebook className="text-[#1877F2]" size={24} /> {/* Facebook blue */}
+                                    <LuInstagram className="text-[#E4405F]" size={24} /> {/* Instagram gradient red-pink */}
+                                    <FaXTwitter className="text-[#1DA1F2]" size={24} /> {/* Twitter blue */}
+                                </div>
+
                             </div>
+
                             {/* contact form */}
                             <form className='drop-shadow-lg w-full backdrop-blur-lg bg-[#ffffff] border-2 border-[#fffefe] shadow-2xl p-2 my-4 rounded-lg'>
                                 <div className='flex items-center gap-3 px-4 py-2 rounded-full bg-[#e8e8eb] my-4'>
@@ -83,7 +103,11 @@ const ContactFormWithConsentBox = () => {
                                 <div className='flex items-center gap-3 px-4 py-2 rounded-xl bg-[#e8e8eb] my-4'>
                                     <textarea type="text" placeholder='Message' rows={5} className='w-full bg-transparent outline-none text-white' />
                                 </div>
-                                <button className='w-full bg-black text-white rounded py-2 cursor-pointer'>
+                                <div className='flex items-center gap-4'>
+                                    <input type="checkbox" name="" id="" />
+                                    <p className='text-slate-400 text-sm'>I agree that my submitted data is being collected and stored</p>
+                                </div>
+                                <button className='w-full bg-black text-white rounded py-2 cursor-pointer mt-4'>
                                     Send Message
                                 </button>
                             </form>
