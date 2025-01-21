@@ -16,16 +16,10 @@ const AppAuthUI = () => {
             <AuthWithShowPassword />
             <SignInAuthWithSocialIcon />
             <SplitScreenWithLogin />
-<<<<<<< HEAD
             <SignUpwithIllustration />
             <OTPScreen />
             <OTPwithResentCode />
             <ConfirmPassword />
-=======
-             <SignUpwithIllustration/>
-            <OTPScreen/>
-            <OTPwithResentCode/>
->>>>>>> 22a29b9142405812d7b4d0f136802e435ffa017a
         </div>
     )
 }

@@ -57,6 +57,9 @@ const Sidebar = () => {
                                     <NavLink to="/components/Cookie" className={({ isActive }) => `block py-2 px-4 rounded-md text-white ${isActive ? 'bg-blue-500 text-white' : "hover:bg-gray-600"}`}>
                                         <li className="py-1 flex justify-between items-center">Cookie<span>8</span></li>
                                     </NavLink>
+                                    <NavLink to="/components/Contact" className={({ isActive }) => `block py-2 px-4 rounded-md text-white ${isActive ? 'bg-blue-500 text-white' : "hover:bg-gray-600"}`}>
+                                        <li className="py-1 flex justify-between items-center">Contact Form<span>8</span></li>
+                                    </NavLink>
 
                                 </ul>
                             </motion.div>
@@ -64,7 +67,7 @@ const Sidebar = () => {
                     </div>
 
                     {/* Core Components Section */}
-                    <div className="drop-shadow-lg w-full bg-[#1C1F26] border-2 border-[#343942] shadow-2xl rounded-lg mb-4">
+                    {/* <div className="drop-shadow-lg w-full bg-[#1C1F26] border-2 border-[#343942] shadow-2xl rounded-lg mb-4">
                         <p
                             onClick={() => setCoreComponentsDropdownOpen(!isCoreComponentsDropdownOpen)}
                             className="flex items-center text-white justify-between px-4 py-4 rounded-full cursor-pointer font-serif font-semibold"
@@ -88,10 +91,10 @@ const Sidebar = () => {
                                 </ul>
                             </motion.div>
                         )}
-                    </div>
+                    </div> */}
 
                     {/* Marketing UI Section */}
-                    <div className="drop-shadow-lg w-full bg-[#1C1F26] border-2 border-[#343942] shadow-2xl rounded-lg">
+                    {/* <div className="drop-shadow-lg w-full bg-[#1C1F26] border-2 border-[#343942] shadow-2xl rounded-lg">
                         <p
                             onClick={() => setMarketingUIDropdownOpen(!isMarketingUIDropdownOpen)}
                             className="flex items-center text-white justify-between px-4 py-4 rounded-full cursor-pointer font-serif font-semibold"
@@ -114,7 +117,7 @@ const Sidebar = () => {
                                 </ul>
                             </motion.div>
                         )}
-                    </div>
+                    </div> */}
                 </div>
             </div >
         </div >
