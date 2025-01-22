@@ -60,6 +60,9 @@ const Sidebar = () => {
                                     <NavLink to="/components/Contact" className={({ isActive }) => `block py-2 px-4 rounded-md text-white ${isActive ? 'bg-blue-500 text-white' : "hover:bg-gray-600"}`}>
                                         <li className="py-1 flex justify-between items-center">Contact Form<span>8</span></li>
                                     </NavLink>
+                                    <NavLink to="/components/Table" className={({ isActive }) => `block py-2 px-4 rounded-md text-white ${isActive ? 'bg-blue-500 text-white' : "hover:bg-gray-600"}`}>
+                                        <li className="py-1 flex justify-between items-center">Table<span>8</span></li>
+                                    </NavLink>
 
                                 </ul>
                             </motion.div>

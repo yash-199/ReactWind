@@ -10,6 +10,7 @@ import AppCardUI from './component/ApplicationUI/AppCardUI.jsx';
 import AppAuthUI from './component/ApplicationUI/AppAuthUI.jsx';
 import AppCookieUI from './component/ApplicationUI/AppCookieUI.jsx';
 import AppContactUI from './component/ApplicationUI/AppContactUI.jsx';
+import AppTable from './component/ApplicationUI/AppTable.jsx';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="Auth" element={<AppAuthUI />} />
           <Route path="Cookie" element={<AppCookieUI />} />
           <Route path="Contact" element={<AppContactUI />} />
+          <Route path="Table" element={<AppTable />} />
           {/* Add more child routes as needed */}
         </Route>
       </Routes>
