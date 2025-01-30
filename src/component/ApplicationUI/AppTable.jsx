@@ -3,6 +3,7 @@ import PriceComp from '../../Table/PriceComp'
 import PriceCompwithBtBtn from '../../Table/PriceCompwithBtBtn'
 import EcommTable from '../../Table/EcommTable'
 import FilterTable from '../../Table/FilterTable'
+import TableWithSortingSearch from '../../Table/TableWithSortingSearch'
 
 const AppTable = () => {
     return (
@@ -12,6 +13,7 @@ const AppTable = () => {
             <PriceCompwithBtBtn />
             <EcommTable />
             <FilterTable />
+            <TableWithSortingSearch />
         </div>
     )
 }
