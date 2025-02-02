@@ -1,5 +1,5 @@
 import { assets } from "../assets/ApplicationUi-Image/assets.js";
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 const AllUI = () => {
     return (
@@ -74,4 +74,4 @@ const AllUI = () => {
     )
 }
 
-export default AllUI
+export default AllUI;

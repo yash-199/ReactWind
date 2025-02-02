@@ -25,18 +25,5 @@ export default {
       },
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      addUtilities({
-        '.no-scrollbar': {
-          /* Hide the scrollbar */
-          '-ms-overflow-style': 'none', /* For Internet Explorer and Edge */
-          'scrollbar-width': 'none',   /* For Firefox */
-        },
-        '.no-scrollbar::-webkit-scrollbar': {
-          display: 'none', /* For Chrome, Safari, and Opera */
-        },
-      });
-    },
-  ],
+  plugins: [],
 };

@@ -19,16 +19,15 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/components" element={<Components />}>
-          <Route path="Navbar" element={<AppUINavbar />} />
-          <Route path="Banner" element={<AppUIBanner />} />
-          <Route path="Card" element={<AppCardUI />} />
-          <Route path="Auth" element={<AppAuthUI />} />
-          <Route path="Cookie" element={<AppCookieUI />} />
-          <Route path="Contact" element={<AppContactUI />} />
-          <Route path="Table" element={<AppTable />} />
-          {/* Add more child routes as needed */}
-        </Route>
+        <Route path="/components" element={<Components />} />
+        <Route path="/components/Navbar" element={<AppUINavbar />} />
+        <Route path="/components/Banner" element={<AppUIBanner />} />
+        <Route path="/components/Card" element={<AppCardUI />} />
+        <Route path="/components/Auth" element={<AppAuthUI />} />
+        <Route path="/components/Cookie" element={<AppCookieUI />} />
+        <Route path="/components/Contact" element={<AppContactUI />} />
+        <Route path="/components/Table" element={<AppTable />} />
+        {/* Add more child routes as needed */}
       </Routes>
       <Footer />
     </div>
