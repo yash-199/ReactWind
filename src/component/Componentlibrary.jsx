@@ -9,7 +9,7 @@ const ComponentLibrary = () => {
 
     const getButtonClass = (component) => {
         const baseClass =
-            "bg-white text-black font-sans font-medium py-2 px-4 rounded drop-shadow-lg w-full sm:w-[calc(50%-1rem)] md:w-[calc(25%-1rem)] text-center cursor-pointer";
+            "bg-white text-black font-medium py-2 px-4 rounded drop-shadow-lg w-full sm:w-[calc(50%-1rem)] md:w-[calc(25%-1rem)] text-center cursor-pointer";
         const activeClass =
             "text-white border-2 border-white bg-transparent !bg-transparent";
 
@@ -22,10 +22,10 @@ const ComponentLibrary = () => {
     return (
         <div className="mx-auto w-3/4 py-10">
             <div className="text-white my-14 text-center">
-                <p className="font-mono font-bold text-md my-2 uppercase text-md">
+                <p className="font-bold text-md my-2 uppercase text-md">
                     Form Component Library
                 </p>
-                <h1 className="text-4xl font-medium font-serif leading-1 my-2">
+                <h1 className="text-4xl font-medium leading-1 my-2">
                     5+ Building Block Components
                 </h1>
                 <p className="font-normal text-md">
@@ -85,7 +85,7 @@ const ComponentLibrary = () => {
                 </div>
                 <div className="flex items-center justify-center mt-20">
                     <center>
-                        <p className="text-white font-mono font-semibold mb-10">Simply Copy and Paste Into Your Project – No Hassle, All Ease!</p>
+                        <p className="text-white font-semibold mb-10">Simply Copy and Paste Into Your Project – No Hassle, All Ease!</p>
                         <p className="bg-white text-black py-2 px-4 rounded drop-shadow-lg font-semibold cursor-pointer">Much More Components</p>
                     </center>
                 </div>

@@ -42,7 +42,7 @@ const TableWithSortingSearch = () => {
     )
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Employee Table with Filtering, Sorting, and Search</h1>
+            <h1 className="font-semibold text-2xl my-10">Employee Table with Filtering, Sorting, and Search</h1>
             <div className="py-4 px-4 mt-6 sm:py-4 sm:px-4 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* Header */}
                 <div className="flex justify-between items-center mb-4">
@@ -85,7 +85,7 @@ const TableWithSortingSearch = () => {
                             </form>
 
                             {/* Filters */}
-                            <div className="grid grid-cols-auto">
+                            <div className="w-full grid grid-cols-auto gap-4 pt-5 gap-y-6 px-3 sm:px-0">
                                 <div>
                                     <p className="text-slate-500 text-sm py-2">Employee Name/Id</p>
                                     <input

@@ -20,7 +20,6 @@ const AppTable = () => {
                     and Vue.
                 </p>
             </div>
-            <hr className="mt-10 mb-10" />
             <div className='flex sm:justify-center gap-10 pt-5 w-full overflow-x-auto'>
                 <NavLink to='/components/Navbar'>
                     <p className='text-white hover:bg-white duration-300 transition-all hover:text-black border border-white font-bold py-3 px-5 uppercase rounded'>

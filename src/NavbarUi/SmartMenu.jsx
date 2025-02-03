@@ -14,10 +14,7 @@ const SmartMenu = () => {
     return (
         <div className="sm:px-10 sm:py-5 px-0 py-0">
             <div className="flex flex-col justify-center mt-10 px-0">
-                <p className="text-white text-4xl font-mono font-semibold">Responsive Menu Top & Bottom</p>
-                <p className="my-5 text-white text-lg text-justify">
-                    The SmartMenu component features a top header with a title and description for larger screens, along with toggle buttons for preview and code view. On smaller screens, it switches to a fixed bottom navigation bar with icon-based navigation for a mobile-friendly experience. This responsive layout ensures an optimized UI across different device sizes.
-                </p>
+                <p className="text-white text-4xl my-10 font-semibold">Responsive Menu Top & Bottom</p>
                 <div className="py-4 px-4 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                     {/* header */}
                     <div className="flex justify-between items-center mb-4">
@@ -47,7 +44,7 @@ const SmartMenu = () => {
                         <>
                             {showPreview ? (
                                 <div className="bg-white mt-3 rounded py-2 px-4 flex items-center justify-between">
-                                    <p className="text-black font-semibold rounded-full font-mono uppercase bg-white drop-shadow-lg px-6 py-2">
+                                    <p className="text-black font-semibold rounded-full my-1 uppercase bg-white drop-shadow-lg px-6 py-2">
                                         Logo
                                     </p>
                                     <div className="flex items-center gap-4 px-4 py-2 rounded-full bg-[#333A5C]">
@@ -72,7 +69,7 @@ const SmartMenu = () => {
                                     </div>
                                     {`
 <div className="bg-white mt-3 rounded py-2 px-4 flex items-center justify-between">
-<p className="text-black font-semibold rounded-full font-mono uppercase bg-white drop-shadow-lg px-6 py-2">
+<p className="text-black font-semibold rounded-full my-10 uppercase bg-white drop-shadow-lg px-6 py-2">
     Logo
 </p>
 <div className="flex items-center gap-4 px-4 py-2 rounded-full bg-[#333A5C]">

@@ -14,9 +14,7 @@ const ImgCardwTitndDesc = () => {
     };
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Image Card with Title and Description</h1>
-            <p className="text-lg text-justify">This sleek and modern card component highlights key content. It features an image at the top, followed by a bold title and a paragraph. Ideal for showcasing various types of content, such as blog posts, portfolio items, or product features, this card layout ensures a visually engaging presentation that captures attention.
-            </p>
+            <h1 className="font-semibold text-2xl my-10">Image Card with Title and Description</h1>
             <div className="py-4 px-4 mt-6 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* Header */}
                 <div className="flex justify-between items-center mb-4">

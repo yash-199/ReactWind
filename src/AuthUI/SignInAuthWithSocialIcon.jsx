@@ -13,9 +13,7 @@ const SignInAuthWithSocialIcon = () => {
     const [state, setState] = useState()
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">SignIn with Social Icon</h1>
-            <p className="text-lg text-justify">A user-friendly sign-in form with input fields for email and password, a prominent 'Sign In' button, and links for 'Forgot Password?' and 'Create an Account' for additional actions.</p>
-
+            <h1 className="font-semibold text-2xl my-10">SignIn with Social Icon</h1>
             <div className="py-4 px-4 mt-6 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* header */}
                 <div className="flex justify-between items-center mb-4">
@@ -45,10 +43,10 @@ const SignInAuthWithSocialIcon = () => {
                 {/* content */}
                 <div className="bg-slate-900 rounded-lg overflow-hidden py-2">
                     <div className='w-1/3 mx-auto p-6 sm:p-8 flex flex-col items-center'>
-                        <p className="text-center text-2xl text-white font-mono mb-6">
+                        <p className="text-center text-2xl text-white mb-6">
                             {state === 'Sign Up' ? 'Create your Account' : 'Login your account'}
                         </p>
-                        {/* <p className='text-4xl font-semibold font-mono mb-10'>ReactWind</p> */}
+                        {/* <p className='text-4xl font-semibold mb-10'>ReactWind</p> */}
                         <div className='flex items-center gap-3'>
                             <p className="h-0.5 w-14 bg-slate-400 "></p>
                             <p className="text-sm font-bold">Connect With</p>

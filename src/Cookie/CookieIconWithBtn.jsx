@@ -16,7 +16,7 @@ const CookieIconWithBtn = () => {
     return (
         <>
             <div>
-                <h1 className="font-semibold text-2xl mt-4">Cookie Icon with Button</h1>
+                <h1 className="font-semibold text-2xl my-10">Cookie Icon with Button</h1>
                 <div className="py-4 px-4 mt-6 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                     {/* Header */}
                     <div className="flex justify-between items-center mb-4">

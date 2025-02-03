@@ -17,7 +17,6 @@ const AppContactUI = () => {
                     and Vue.
                 </p>
             </div>
-            <hr className="mt-10 mb-10" />
             <div className='flex sm:justify-center gap-10 pt-5 w-full overflow-x-auto'>
                 <NavLink to='/components/Navbar'>
                     <p className='text-white hover:bg-white duration-300 transition-all hover:text-black border border-white font-bold py-3 px-5 uppercase rounded'>
@@ -51,8 +50,6 @@ const AppContactUI = () => {
                 </NavLink>
 
             </div>
-            <h1 className="text-3xl pb-2 font-semibold font-serif">Contact</h1>
-            <p className="text-lg text-justify">Authentication, sign in, sign up, login, registration forms for Tailwind CSS by TailGrids. The Signin-Signup Tailwind component can help in developing another important part of a website. When done with Tailwind CSS UI components, it becomes much more versatile and can be adapted to all kinds of websites and needs.</p>
             <SimpleContact />
             <CenteredContactForm />
             <ContactFormWithConsentBox />

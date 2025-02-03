@@ -15,7 +15,7 @@ const SimpleContact = () => {
     };
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Contact Form</h1>
+            <h1 className="font-semibold text-2xl my-10">Contact Form</h1>
             <div className="py-4 px-4 mt-6 sm:py-4 sm:px-0 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* header */}
                 <div className="flex justify-between items-center mb-4">
@@ -47,10 +47,10 @@ const SimpleContact = () => {
                         <div className="m-2 grid gap-6 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 bg-white text-black p-4 rounded-lg">
                             {/* Contact Info Section */}
                             <div className="p-0 sm:p-2">
-                                <p className="text-lg font-serif font-extrabold tracking-widest py-2">
+                                <p className="text-lg font-extrabold tracking-widest py-2">
                                     Contact Us
                                 </p>
-                                <h2 className="uppercase text-black text-xl font-serif font-semibold sm:text-2xl">
+                                <h2 className="uppercase text-black text-xl font-semibold sm:text-2xl">
                                     Get in touch with us
                                 </h2>
                                 <p className="w-20 h-0.5 bg-black my-2"></p>
@@ -66,7 +66,7 @@ const SimpleContact = () => {
                                         <IoLocationOutline className="text-4xl text-white p-2" />
                                     </div>
                                     <div className="my-2">
-                                        <p className="text-lg text-black font-serif font-bold">
+                                        <p className="text-lg text-black font-bold">
                                             Our Location
                                         </p>
                                         <p className="text-slate-500 text-sm">
@@ -84,7 +84,7 @@ const SimpleContact = () => {
                                         <FiPhoneCall className="text-4xl text-white p-2" />
                                     </div>
                                     <div className="my-2">
-                                        <p className="text-lg text-black font-serif font-bold">
+                                        <p className="text-lg text-black font-bold">
                                             Phone Number
                                         </p>
                                         <p className="text-slate-500 text-sm">
@@ -99,7 +99,7 @@ const SimpleContact = () => {
                                         <MdOutlineAlternateEmail className="text-4xl text-white p-2" />
                                     </div>
                                     <div className="my-2">
-                                        <p className="text-lg text-black font-serif font-bold">Email</p>
+                                        <p className="text-lg text-black font-bold">Email</p>
                                         <p className="text-slate-500 text-sm">
                                             <a href="mailto:someone@example.com">someone@example.com</a>
                                         </p>
@@ -173,10 +173,10 @@ const SimpleContact = () => {
       <div className="m-2 grid gap-6 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 bg-white text-black p-4 rounded-lg">
                             {/* Contact Info Section */}
                             <div className="p-0 sm:p-2">
-                                <p className="text-lg font-serif font-extrabold tracking-widest py-2">
+                                <p className="text-lg font-extrabold tracking-widest py-2">
                                     Contact Us
                                 </p>
-                                <h2 className="uppercase text-black text-xl font-serif font-semibold sm:text-2xl">
+                                <h2 className="uppercase text-black text-xl font-semibold sm:text-2xl">
                                     Get in touch with us
                                 </h2>
                                 <p className="w-20 h-0.5 bg-black my-2"></p>
@@ -192,7 +192,7 @@ const SimpleContact = () => {
                                         <IoLocationOutline className="text-4xl text-white p-2" />
                                     </div>
                                     <div className="my-2">
-                                        <p className="text-lg text-black font-serif font-bold">
+                                        <p className="text-lg text-black font-bold">
                                             Our Location
                                         </p>
                                         <p className="text-slate-500 text-sm">
@@ -210,7 +210,7 @@ const SimpleContact = () => {
                                         <FiPhoneCall className="text-4xl text-white p-2" />
                                     </div>
                                     <div className="my-2">
-                                        <p className="text-lg text-black font-serif font-bold">
+                                        <p className="text-lg text-black font-bold">
                                             Phone Number
                                         </p>
                                         <p className="text-slate-500 text-sm">
@@ -225,7 +225,7 @@ const SimpleContact = () => {
                                     <MdOutlineAlternateEmail className="text-4xl text-white p-2" />
                                 </div>
                                 <div className="my-2">
-                                    <p className="text-lg text-black font-serif font-bold">Email</p>
+                                    <p className="text-lg text-black font-bold">Email</p>
                                     <p className="text-slate-500 text-sm">
                                         <a href="mailto:someone@example.com">someone@example.com</a>
                                     </p>

@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="container">
             <div className="md:mt-20 mt-10">
-                <h1 className="text-white md:text-6xl text-2xl text-center font-serif md:leading-loose px-2">
+                <h1 className="text-white md:text-6xl text-2xl text-center md:leading-loose px-2">
                     Build stunning modern <span className="font-semibold">UI</span> rapidly with just <br /> with <span className="font-semibold">React and Tailwind</span>.
                 </h1>
                 <center>

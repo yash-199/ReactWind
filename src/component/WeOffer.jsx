@@ -9,7 +9,7 @@ const WeOffer = () => {
                 <div className='flex gap-10 px-2 py-2'>
                     <div><IoLayersOutline className='bg-white shadow-xl text-5xl py-2 px-2 rounded-full' /></div>
                     <div>
-                        <p className='font-mono text-white font-semibold text-lg'>500+ <br />Components</p>
+                        <p className='text-white font-semibold text-lg'>500+ <br />Components</p>
                         <p className='text-white text-justify px-2'>Beautifully designed, expertly crafted components that follow all accessibility best practices and are easy to customize.</p>
                     </div>
                 </div>
@@ -19,7 +19,7 @@ const WeOffer = () => {
                     <div className='flex gap-10 px-2 py-2'>
                         <div><FaCode className='bg-white shadow-xl text-5xl py-2 px-2 rounded-full' /></div>
                         <div>
-                            <p className='font-mono text-white font-semibold text-lg'>React, Tailwind CSS, and HTML</p>
+                            <p className='text-white font-semibold text-lg'>React, Tailwind CSS, and HTML</p>
                             <p className='text-white text-justify px-2'>Interactive examples for React  powered by Headless UI, plus vanilla HTML if you’d rather write any necessary JS yourself.</p>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const WeOffer = () => {
                     <div className='flex gap-10 px-2 py-2'>
                         <div><DiResponsive className='bg-white shadow-xl text-5xl py-2 px-2 rounded-full' /></div>
                         <div>
-                            <p className='font-mono text-white font-semibold text-lg'>Fully <br /> Responsive</p>
+                            <p className='text-white font-semibold text-lg'>Fully <br /> Responsive</p>
                             <p className='text-white text-justify px-2'>Every example is fully responsive and carefully designed and implemented to look great at any screen size.</p>
                         </div>
                     </div>

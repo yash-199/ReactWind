@@ -23,10 +23,7 @@ const NavbarwithTopHeader = () => {
         <>
             <div className="sm:px-10 sm:py-5 px-0 py-0">
                 <div className="flex flex-col justify-center px-0">
-                    <p className="text-white text-4xl font-mono font-semibold">Navbar with Top Banner</p>
-                    <p className="my-5 text-white text-lg text-justify">
-                        This navbar component includes a top banner for promotions, which is toggleable with a close button. Below it, a clean, modern navigation bar offers links to different site sections, with a logo on the left and links on the right. It also includes a "Sign In" button for authentication.
-                    </p>
+                    <p className="text-white text-4xl font-semibold my-10">Navbar with Top Banner</p>
                     <div className="py-4 px-4 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                         {/* Header */}
                         <div className="flex justify-between items-center mb-4">
@@ -55,13 +52,13 @@ const NavbarwithTopHeader = () => {
 
                         {/* Content Preview */}
                         <div className="bg-slate-900 rounded-lg overflow-hidden h-96">
-                            <div className="bg-slate-700 text-center text-white uppercase font-mono">
+                            <div className="bg-slate-700 text-center text-white uppercase">
                                 Flash Sale or Alert
                             </div>
                             {showPreview ? (
 
                                 <div className="top-0 left-0 w-full h-16 flex items-center justify-between px-4 backdrop-blur-md bg-glass/30 border border-white/20 drop-shadow-3xl z-50">
-                                    <p className="text-black font-semibold rounded-full font-mono uppercase bg-white drop-shadow-lg px-6 py-2">
+                                    <p className="text-black font-semibold rounded-full uppercase bg-white drop-shadow-lg px-6 py-2">
                                         Logo
                                     </p>
                                     <ul className="hidden md:flex text-white items-start gap-5 uppercase text-sm">
@@ -103,7 +100,7 @@ const NavbarwithTopHeader = () => {
                                                     className="absolute text-black top-2 right-2 text-2xl border-2 border-black rounded-full p-1 cursor-pointer"
                                                     onClick={() => setIsOpen(false)} // Close the sidebar
                                                 />
-                                                <ul className="px-2 py-4 text-black font-mono text-lg">
+                                                <ul className="px-2 py-4 text-black text-lg">
                                                     <li className="py-2">Docs</li>
                                                     <li className="py-2">Components</li>
                                                     <li className="py-2">Blog</li>
@@ -132,7 +129,7 @@ const NavbarwithTopHeader = () => {
 <div className="bg-slate-700 text-center text-white uppercase">
                                 Flash Sale or Alert
                             </div>
-                            <p className="text-black font-semibold rounded-full font-mono uppercase bg-white drop-shadow-lg px-6 py-2">
+                            <p className="text-black font-semibold rounded-full uppercase bg-white drop-shadow-lg px-6 py-2">
                                 Logo
                             </p>
                             <ul className="hidden md:flex text-white items-start gap-5 uppercase text-sm">
@@ -174,7 +171,7 @@ const NavbarwithTopHeader = () => {
                                             className="absolute text-black top-2 right-2 text-2xl border-2 border-black rounded-full p-1 cursor-pointer"
                                             onClick={() => setIsOpen(false)} // Close the sidebar
                                         />
-                                        <ul className="px-2 py-4 text-black font-mono text-lg">
+                                        <ul className="px-2 py-4 text-black text-lg">
                                             <li className="py-2">Docs</li>
                                             <li className="py-2">Components</li>
                                             <li className="py-2">Blog</li>

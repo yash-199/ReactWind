@@ -5,7 +5,7 @@ import DropdownMenu from "../../NavbarUi/DropdownMenu";
 import NavbarCenterLogo from "../../NavbarUi/NavbarCenterLogo";
 import SideBarMenu from "../../NavbarUi/SideBarMenu";
 import SimpleNavbar from "../../NavbarUi/SimpleNavbar";
-import SmartMenu from "../../NavbarUi/SmartMenu";
+// import SmartMenu from "../../NavbarUi/SmartMenu";
 import '../../NavbarUi/Dashboard.css'
 import NavbarwithTopHeader from "../../NavbarUi/NavbarwithTopHeader";
 import { NavLink } from "react-router-dom";
@@ -23,7 +23,6 @@ const AppUINavbar = () => {
                     and Vue.
                 </p>
             </div>
-            <hr className="mt-10 mb-10" />
             <div className='flex sm:justify-center gap-10 pt-5 w-full overflow-x-auto'>
                 <NavLink to='/components/Banner'>
                     <p className='text-white hover:bg-white duration-300 transition-all hover:text-black border border-white font-bold py-3 px-5 uppercase rounded'>
@@ -62,7 +61,7 @@ const AppUINavbar = () => {
             <NavbarCenterLogo />
             <DropdownMenu />
             <SideBarMenu />
-            <SmartMenu />
+            {/* <SmartMenu /> */}
             <DashboardMenu />
             <NavbarwithTopHeader />
         </div>

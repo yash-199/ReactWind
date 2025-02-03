@@ -20,7 +20,7 @@ const SignUpwithIllustration = () => {
 
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Sign-Up Form with Illustration</h1>
+            <h1 className="font-semibold text-2xl my-10">Sign-Up Form with Illustration</h1>
             <div className="py-4 px-4 mt-6 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* header */}
                 <div className="flex justify-between items-center mb-4">
@@ -31,14 +31,14 @@ const SignUpwithIllustration = () => {
                     </div>
                     <div className="flex py-1 px-2 justify-between gap-2 rounded mt-10 md:mt-0 w-72">
                         <p
-                            className={`flex items-center gap-2 font-sans font-medium py-2 px-4 rounded drop-shadow-lg w-full text-center cursor-pointer ${showPreview ? "text-white bg-indigo-500" : "text-black bg-white"
+                            className={`flex items-center gap-2 font-medium py-2 px-4 rounded drop-shadow-lg w-full text-center cursor-pointer ${showPreview ? "text-white bg-indigo-500" : "text-black bg-white"
                                 }`}
                             onClick={() => setShowPreview(true)}
                         >
                             <FaRegEye /> Prev
                         </p>
                         <p
-                            className={`flex items-center gap-2 font-sans font-medium py-2 px-4 rounded drop-shadow-lg w-full text-center cursor-pointer ${!showPreview ? "text-white bg-indigo-500" : "text-black bg-white"
+                            className={`flex items-center gap-2 font-medium py-2 px-4 rounded drop-shadow-lg w-full text-center cursor-pointer ${!showPreview ? "text-white bg-indigo-500" : "text-black bg-white"
                                 }`}
                             onClick={() => setShowPreview(false)}
                         >
@@ -53,7 +53,7 @@ const SignUpwithIllustration = () => {
                             <div className="flex items-center w-full">
                                 {/* Left Section */}
                                 <div className="w-1/2 flex flex-col items-center">
-                                    <h2 className="text-2xl pb-2 text-center text-black font-sans font-semibold">
+                                    <h2 className="text-2xl pb-2 text-center text-black font-semibold">
                                         React Components
                                     </h2>
                                     <p className="text-center text-sm text-slate-600 font-normal">
@@ -68,7 +68,7 @@ const SignUpwithIllustration = () => {
                                 {/* Right Section */}
                                 <div className="w-1/2 flex flex-col items-center">
                                     <p className="text-sm text-slate-600 font-medium uppercase">Start For Free</p>
-                                    <h1 className="text-black font-semibold font-serif py-2 text-2xl">
+                                    <h1 className="text-black font-semibold py-2 text-2xl">
                                         {state === "Sign up" ? "Sign Up" : "Login "} to React Components
                                     </h1>
                                     <form className="w-full max-w-sm space-y-4">
@@ -175,7 +175,7 @@ return (
                             <div className="flex items-center w-full">
                                 {/* Left Section */}
                                 <div className="w-1/2 flex flex-col items-center">
-                                    <h2 className="text-2xl pb-2 text-center text-black font-sans font-semibold">
+                                    <h2 className="text-2xl pb-2 text-center text-black font-semibold">
                                         React Components
                                     </h2>
                                     <p className="text-center text-sm text-slate-600 font-normal">
@@ -190,7 +190,7 @@ return (
                                 {/* Right Section */}
                                 <div className="w-1/2 flex flex-col items-center">
                                     <p className="text-sm text-slate-600 font-medium uppercase">Start For Free</p>
-                                    <h1 className="text-black font-semibold font-serif py-2 text-2xl">
+                                    <h1 className="text-black font-semibold py-2 text-2xl">
                                         {state === "Sign up" ? "Sign Up" : "Login "} to React Components
                                     </h1>
                                     <form className="w-full max-w-sm space-y-4">

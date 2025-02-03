@@ -11,7 +11,7 @@ export default {
         glass: "#5F6FFF",   // Custom blue color for glassmorphism
       },
       gridTemplateColumns: {
-        auto: 'repeat(auto-fill,minmax(200px,1fr))',
+        'auto': 'repeat(auto-fill,minmax(200px,1fr))'
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',

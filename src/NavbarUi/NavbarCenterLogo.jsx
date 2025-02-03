@@ -19,10 +19,7 @@ const NavbarCenterLogo = () => {
     return (
         <div className="sm:px-10 sm:py-5 px-0 py-0">
             <div className="flex flex-col justify-center mt-10 px-0">
-                <p className="text-white text-4xl font-mono font-semibold">Center Logo Navbar</p>
-                <p className="my-5 text-white text-lg text-justify">
-                    The NavbarCenterLogo component is a sleek and responsive navigation bar designed to enhance user experience for various web applications. It features a central logo with navigation links on either side, creating a balanced and visually appealing layout.
-                </p>
+                <p className="text-white text-4xl font-semibold my-10">Center Logo Navbar</p>
                 <div className="py4 px-4 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                     {/* header */}
                     <div className="flex justify-between items-center mb-4">
@@ -60,12 +57,12 @@ const NavbarCenterLogo = () => {
                                     <li className="font-normal">Service</li>
                                     <li className="font-normal">Contact</li>
                                 </ul>
-                                <p className="text-black font-semibold rounded-full font-mono uppercase bg-white drop-shadow-lg px-6 py-2">
+                                <p className="text-black font-semibold rounded-full uppercase bg-white drop-shadow-lg px-6 py-2">
                                     Logo
                                 </p>
                                 <div className="sm:flex hidden items-center justify-between gap-4">
-                                    <p className='text-md px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all hover:bg-black hover:text-white font-mono'>Sign In</p>
-                                    <p className='text-md px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all bg-black text-white hover:text-black hover:bg-white font-mono'>Login</p>
+                                    <p className='text-md px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all hover:bg-black hover:text-white'>Sign In</p>
+                                    <p className='text-md px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all bg-black text-white hover:text-black hover:bg-white'>Login</p>
                                 </div>
                                 <FaBarsStaggered
                                     className="text-black cursor-pointer block sm:hidden"
@@ -84,7 +81,7 @@ const NavbarCenterLogo = () => {
                                                 className="absolute text-black top-2 right-2 text-2xl border-2 border-black rounded-full p-1 cursor-pointer"
                                                 onClick={() => setIsOpen(false)} // Close the sidebar
                                             />
-                                            <ul className="px-2 py-4 text-black font-mono text-lg">
+                                            <ul className="px-2 py-4 text-black text-lg">
                                                 <li className="font-normal">Home</li>
                                                 <li className="font-normal">About</li>
                                                 <li className="font-normal">Service</li>
@@ -117,12 +114,12 @@ import { FaRegEye } from "react-icons/fa";
                                     <li className="font-normal">Service</li>
                                     <li className="font-normal">Contact</li>
                                 </ul>
-                                <p className="text-black font-semibold rounded-full font-mono uppercase bg-white drop-shadow-lg px-6 py-2">
+                                <p className="text-black font-semibold rounded-full uppercase bg-white drop-shadow-lg px-6 py-2">
                                     Logo
                                 </p>
                                 <div className="sm:flex hidden items-center justify-between gap-4">
-                                    <p className='text-md px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all hover:bg-black hover:text-white font-mono'>Sign In</p>
-                                    <p className='text-md px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all bg-black text-white hover:text-black hover:bg-white font-mono'>Login</p>
+                                    <p className='text-md px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all hover:bg-black hover:text-white'>Sign In</p>
+                                    <p className='text-md px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all bg-black text-white hover:text-black hover:bg-white'>Login</p>
                                 </div>
                                 <FaBarsStaggered
                                     className="text-black cursor-pointer block sm:hidden"

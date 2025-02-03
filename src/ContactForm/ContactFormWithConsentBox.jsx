@@ -13,7 +13,7 @@ const ContactFormWithConsentBox = () => {
     const [showPreview, setShowPreview] = useState(true);
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Centerd Contact Form</h1>
+            <h1 className="font-semibold text-2xl my-10">Centerd Contact Form</h1>
             <div className="py-4 px-2 mt-6 sm:py-4 sm:px-4 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 <div className="flex justify-between items-center mb-4">
                     <div className="hidden sm:flex gap-3 px-2">
@@ -23,14 +23,14 @@ const ContactFormWithConsentBox = () => {
                     </div>
                     <div className="flex py-1 px-2 justify-between gap-2 rounded mt-10 md:mt-0 w-72">
                         <p
-                            className={`flex items-center gap-2 font-sans font-medium py-2 px-4 rounded drop-shadow-lg w-full text-center cursor-pointer ${showPreview ? "text-white bg-indigo-500" : "text-black bg-white"
+                            className={`flex items-center gap-2 font-medium py-2 px-4 rounded drop-shadow-lg w-full text-center cursor-pointer ${showPreview ? "text-white bg-indigo-500" : "text-black bg-white"
                                 }`}
                             onClick={() => setShowPreview(true)}
                         >
                             <FaRegEye /> Prev
                         </p>
                         <p
-                            className={`flex items-center gap-2 font-sans font-medium py-2 px-4 rounded drop-shadow-lg w-full text-center cursor-pointer ${!showPreview ? "text-white bg-indigo-500" : "text-black bg-white"
+                            className={`flex items-center gap-2 font-medium py-2 px-4 rounded drop-shadow-lg w-full text-center cursor-pointer ${!showPreview ? "text-white bg-indigo-500" : "text-black bg-white"
                                 }`}
                             onClick={() => setShowPreview(false)}
                         >
@@ -42,25 +42,25 @@ const ContactFormWithConsentBox = () => {
                 <div className="bg-slate-900 rounded-lg overflow-hidden py-8 sm:px-8 px-2">
                     <div className='bg-white  sm:p-4 p-1 rounded-xl sm:px-10 px-2'>
                         <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 sm:mt-10 mt-4'>
-                            <p className='text-black sm:text-4xl text-lg font-medium font-serif sm:text-left text-center'>Start Your Journey to Better Business</p>
+                            <p className='text-black sm:text-4xl text-lg font-medium sm:text-left text-center'>Start Your Journey to Better Business</p>
                             <div>
                                 <center>
                                     <FaLocationCrosshairs className='bg-[#FBC108] text-white text-center p-3 rounded-full text-6xl' />
-                                    <p className='text-black font-sans font-medium my-2 text-xl'>Address</p>
+                                    <p className='text-black font-medium my-2 text-xl'>Address</p>
                                     <p className='text-slate-400'>99 S.t Jomblo Park Pekanbaru 28292, Indonesia</p>
                                 </center>
                             </div>
                             <div>
                                 <center>
                                     <LuPhoneCall className='bg-[#E2EFFF] text-[-#6D9DD9] text-center p-3 rounded-full text-6xl' />
-                                    <p className='text-black font-sans font-medium my-2 text-xl'>Call Us</p>
+                                    <p className='text-black font-medium my-2 text-xl'>Call Us</p>
                                     <p className='text-slate-400'><a href="tel:+919999999999">+919999999999</a></p>
                                 </center>
                             </div>
                             <div>
                                 <center>
                                     <MdAlternateEmail className='bg-[#6D9DD9] text-white text-center p-3 rounded-full text-6xl' />
-                                    <p className='text-black font-sans font-medium my-2 text-xl'>Mail</p>
+                                    <p className='text-black font-medium my-2 text-xl'>Mail</p>
                                     <p className='text-slate-400'><a href="mailto:someexample@gmail.com">someexample@gmail.com</a></p>
                                 </center>
                             </div>

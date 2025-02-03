@@ -11,6 +11,7 @@ import AppAuthUI from './component/ApplicationUI/AppAuthUI.jsx';
 import AppCookieUI from './component/ApplicationUI/AppCookieUI.jsx';
 import AppContactUI from './component/ApplicationUI/AppContactUI.jsx';
 import AppTable from './component/ApplicationUI/AppTable.jsx';
+import Accordion from './component/CoreComponents/Accordion.jsx';
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/components/Cookie" element={<AppCookieUI />} />
         <Route path="/components/Contact" element={<AppContactUI />} />
         <Route path="/components/Table" element={<AppTable />} />
+        <Route path="/components/Accordion" element={<Accordion />} />
         {/* Add more child routes as needed */}
       </Routes>
       <Footer />

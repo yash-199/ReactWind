@@ -15,8 +15,7 @@ const NormalAuth = () => {
     };
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Simple Authentication Form</h1>
-            <p className="text-lg text-justify">A user-friendly sign-in form with input fields for email and password, a prominent 'Sign In' button, and links for 'Forgot Password?' and 'Create an Account' for additional actions.</p>
+            <h1 className="font-semibold text-2xl my-10">Simple Authentication Form</h1>
 
             <div className="py-4 px-4 mt-6 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* header */}

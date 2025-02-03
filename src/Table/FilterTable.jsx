@@ -45,7 +45,7 @@ const FilterTable = () => {
 
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Filter Table</h1>
+            <h1 className="font-semibold text-2xl my-10">Filter Table</h1>
             <div className="py-4 px-4 mt-6 sm:py-4 sm:px-4 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 <div className="flex justify-between items-center mb-4">
                     <div className="hidden sm:flex gap-3 px-2">

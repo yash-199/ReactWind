@@ -14,7 +14,7 @@ const CenteredContactForm = () => {
     };
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Centerd Contact Form</h1>
+            <h1 className="font-semibold text-2xl my-10">Centerd Contact Form</h1>
             <div className="py-4 px-4 mt-6 sm:py-4 sm:px-4 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* header */}
                 <div className="flex justify-between items-center mb-4">
@@ -44,8 +44,8 @@ const CenteredContactForm = () => {
                 <div className="bg-slate-900 rounded-lg overflow-hidden py-2">
                     {showPreview ? (
                         <div className='sm:w-2/5 w-full mx-auto drop-shadow-lg backdrop-blur-lg bg-[#ffffff] border-2 border-[#fffefe] shadow-2xl p-8 my-4 rounded-lg  text-black'>
-                            <p className='text-center text-3xl pb-2 font-serif font-semibold'>Get in touch</p>
-                            <p className='text-center text-black uppercase text-sm font-serif font-semibold'>We'll get back to you within 24 Hours</p>
+                            <p className='text-center text-3xl pb-2 font-semibold'>Get in touch</p>
+                            <p className='text-center text-black uppercase text-sm font-semibold'>We'll get back to you within 24 Hours</p>
                             <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 mt-6'>
                                 <div className='flex items-center gap-3 px-4 py-2 rounded-full bg-[#e8e8eb] my-4'>
                                     <SiNamecheap className='text-black text-lg' />
@@ -88,8 +88,8 @@ import { FiPhoneCall } from "react-icons/fi";
 const CenteredContactForm = () => {
 return(
  <div className='sm:w-2/5 w-full mx-auto drop-shadow-lg backdrop-blur-lg bg-[#ffffff] border-2 border-[#fffefe] shadow-2xl p-8 my-4 rounded-lg  text-black'>
-       <p className='text-center text-3xl pb-2 font-serif font-semibold'>Get in touch</p>
-       <p className='text-center text-black uppercase text-sm font-serif font-semibold'>We'll get back to you within 24 Hours</p>
+       <p className='text-center text-3xl pb-2 font-semibold'>Get in touch</p>
+       <p className='text-center text-black uppercase text-sm font-semibold'>We'll get back to you within 24 Hours</p>
        <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 mt-6'>
            <div className='flex items-center gap-3 px-4 py-2 rounded-full bg-[#e8e8eb] my-4'>
                <SiNamecheap className='text-black text-lg' />

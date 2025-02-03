@@ -12,12 +12,7 @@ const CardWAuthorImg = () => {
     };
     return (
         <div>
-            <h1 className="font-semibold text-2xl mt-4">Card with Author Image</h1>
-            <p className="text-lg text-justify">A visually appealing card component that
-                highlights key content details such as a title and description,
-                along with the author information and an image. This layout is
-                perfect for blog posts, articles, or content pieces where
-                showcasing the author profile adds credibility.</p>
+            <h1 className="font-semibold text-2xl my-10">Card with Author Image</h1>
 
             <div className="py-4 px-4 mt-6 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* Header */}

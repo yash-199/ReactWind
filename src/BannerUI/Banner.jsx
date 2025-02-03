@@ -43,10 +43,7 @@ const Banner = () => {
     return (
         <div className="text-white">
             <div className="flex flex-col justify-center px-0">
-                <p className="text-white text-4xl font-mono font-semibold">Banner</p>
-                <p className="my-5 text-white text-lg text-justify">
-                    The Banner component is a responsive and interactive navigation bar built with Tailwind CSS and React, featuring a toggleable code preview, copy-to-clipboard functionality, and a collapsible sidebar for smaller screens.
-                </p>
+                <p className="text-white text-4xl font-mono font-semibold my-10">Banner</p>
                 <div className="py-4 px-4 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                     {/* Header */}
                     <div className="flex justify-between items-center mb-4">

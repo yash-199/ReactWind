@@ -25,10 +25,7 @@ const AddToCart = () => {
     return (
         <div>
             <div className="flex flex-col justify-center mt-10 px-0 md:px-10">
-                <p className="text-white text-4xl font-mono font-semibold">Add To Cart Menu</p>
-                <p className="my-5 text-white text-lg text-justify">
-                    The AddToCart component is a responsive UI element built with Tailwind CSS and React, featuring a navigation menu, code preview functionality, clipboard copy capability, and dynamic menu interactions with animations.
-                </p>
+                <p className="text-white text-4xl font-semibold my-10">Add To Cart Menu</p>
                 <div className="py-4 px-4 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full  backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                     {/* Header */}
                     <div className="flex justify-between items-center mb-4">
@@ -70,7 +67,7 @@ const AddToCart = () => {
                                 <div className="flex items-center font-bold text-2xl cursor-pointer justify-between gap-4 pr-4">
                                     <CiSearch />
                                     <FaOpencart />
-                                    <p className="hidden sm:block text-sm px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all hover:bg-black hover:text-white font-mono">
+                                    <p className="hidden sm:block text-sm px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all hover:bg-black hover:text-white">
                                         Sign In
                                     </p>
                                     {/* Show bars icon only on small screens */}
@@ -92,7 +89,7 @@ const AddToCart = () => {
                                                 className="absolute text-black top-2 right-2 text-2xl border-2 border-black rounded-full p-1 cursor-pointer"
                                                 onClick={() => setIsOpen(false)} // Close the sidebar
                                             />
-                                            <ul className="px-2 py-4 text-black font-mono text-lg">
+                                            <ul className="px-2 py-4 text-black text-lg">
                                                 <li className="py-2">Sign In</li>
                                                 <li className="py-2">Home</li>
                                                 <li
@@ -150,7 +147,7 @@ const AddToCart = () => {
                                 <div className="flex items-center font-bold text-2xl cursor-pointer justify-between gap-4 pr-4">
                                     <CiSearch />
                                     <FaOpencart />
-                                    <p className="hidden sm:block text-sm px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all hover:bg-black hover:text-white font-mono">
+                                    <p className="hidden sm:block text-sm px-4 uppercase border-2 border-black rounded-full hover:bg-slate-200 duration-500 transition-all hover:bg-black hover:text-white">
                                         Sign In
                                     </p>
                                     {/* Show bars icon only on small screens */}
@@ -172,7 +169,7 @@ const AddToCart = () => {
                                                 className="absolute text-black top-2 right-2 text-2xl border-2 border-black rounded-full p-1 cursor-pointer"
                                                 onClick={() => setIsOpen(false)} // Close the sidebar
                                             />
-                                            <ul className="px-2 py-4 text-black font-mono text-lg">
+                                            <ul className="px-2 py-4 text-black text-lg">
                                                 <li className="py-2">Sign In</li>
                                                 <li className="py-2">Home</li>
                                                 <li

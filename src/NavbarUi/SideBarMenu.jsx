@@ -19,10 +19,7 @@ const SideBarMenu = () => {
     return (
         <div className='sm:px-10 sm:py-5 px-0 py-0'>
             <div className='flex flex-col justify-center mt-10 px-0'>
-                <p className="text-white text-4xl font-mono font-semibold">Side Navbar For Desktop & Mobile</p>
-                <p className="my-5 text-white text-lg text-justify">
-                    The SideBarMenu component is a React functional component that implements a sidebar. It utilizes Tailwind CSS for styling and includes features like a collapsible sidebar, code copy functionality, and dynamic content rendering based on the user's choice.
-                </p>
+                <p className="text-white text-4xl font-semibold my-10">Side Navbar For Desktop & Mobile</p>
                 <div className="py-4 px-4 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                     {/* header */}
                     <div className="flex justify-between items-center mb-4">
@@ -54,7 +51,7 @@ const SideBarMenu = () => {
                             <div>
                                 {/* Header with Logo and Menu Icon */}
                                 <div className="bg-white my-2 rounded-lg px-3 py-3 flex items-center justify-between">
-                                    <p className="text-black font-semibold rounded-full font-mono uppercase bg-white drop-shadow-lg px-6 py-2">
+                                    <p className="text-black font-semibold rounded-full uppercase bg-white drop-shadow-lg px-6 py-2">
                                         Logo
                                     </p>
                                     {/* Menu toggle button */}
@@ -102,7 +99,7 @@ const SideBarMenu = () => {
 <div>
 {/* Header with Logo and Menu Icon */}
 < className="bg-white my-2 rounded-lg px-3 py-3 flex items-center justify-between">
-    <p className="text-black font-semibold rounded-full font-mono uppercase bg-white drop-shadow-lg px-6 py-2">
+    <p className="text-black font-semibold rounded-full uppercase bg-white drop-shadow-lg px-6 py-2">
         Logo
     </p>
     {/* Menu toggle button */}

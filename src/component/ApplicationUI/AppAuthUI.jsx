@@ -5,7 +5,7 @@ import OTPScreen from "../../AuthUI/OTPScreen"
 import OTPwithResentCode from "../../AuthUI/OTPwithResentCode"
 import SignInAuthWithSocialIcon from "../../AuthUI/SignInAuthWithSocialIcon"
 import SignUpwithIllustration from "../../AuthUI/SignUpwithIllustration"
-import SplitScreenWithLogin from "../../AuthUI/SplitScreenWithLogin"
+// import SplitScreenWithLogin from "../../AuthUI/SplitScreenWithLogin"
 import { NavLink } from "react-router-dom"
 const AppAuthUI = () => {
     return (
@@ -21,7 +21,6 @@ const AppAuthUI = () => {
                     and Vue.
                 </p>
             </div>
-            <hr className="mt-10 mb-10" />
             <div className='flex sm:justify-center gap-10 pt-5 w-full overflow-x-auto'>
                 <NavLink to='/components/Navbar'>
                     <p className='text-white hover:bg-white duration-300 transition-all hover:text-black border border-white font-bold py-3 px-5 uppercase rounded'>
@@ -58,7 +57,7 @@ const AppAuthUI = () => {
             <NormalAuth />
             <AuthWithShowPassword />
             <SignInAuthWithSocialIcon />
-            <SplitScreenWithLogin />
+            {/* <SplitScreenWithLogin /> */}
             <SignUpwithIllustration />
             <OTPScreen />
             <OTPwithResentCode />

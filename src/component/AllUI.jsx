@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const AllUI = () => {
     return (
         <div className="px-4 py-5">
-            <p className="text-white text-4xl font-mono font-semibold">Application UI</p>
+            <p className="text-white text-4xl font-semibold">Application UI</p>
             <p className="my-5 text-white text-lg text-justify">
                 Build complete web applications with our collection of stunning Tailwind UI components
                 designed specifically for web apps. Tailgrids Application UI consists of - blogs,
@@ -16,24 +16,24 @@ const AllUI = () => {
                     <div className="bg-[#1C1F26] border-2 border-[#343942] shadow-2xl hover:drop-shadow-lg hover:shadow-lg rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 pb-2">
                         <img src={assets.navbar_img} />
                         <hr className="py-1" />
-                        <p className="text-medium text-white font-mono text-lg px-4">Navbar</p>
-                        <p className="px-4 text-medium text-white font-mono text-lg">8 components</p>
+                        <p className="text-medium text-white text-lg px-4">Navbar</p>
+                        <p className="px-4 text-medium text-white text-lg">8 components</p>
                     </div>
                 </NavLink>
                 <NavLink to='/components/Banner'>
                     <div className="bg-[#1C1F26] border-2 border-[#343942] shadow-2xl hover:drop-shadow-lg hover:shadow-lg rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 pb-2">
                         <img src={assets.navbar_img} />
                         <hr className="py-1" />
-                        <p className="text-medium text-white font-mono text-lg px-4">Banner</p>
-                        <p className="px-4 text-medium text-white font-mono text-lg">2 components</p>
+                        <p className="text-medium text-white text-lg px-4">Banner</p>
+                        <p className="px-4 text-medium text-white text-lg">2 components</p>
                     </div>
                 </NavLink>
                 <NavLink to="/components/Card">
                     <div className="bg-[#1C1F26] border-2 border-[#343942] shadow-2xl hover:drop-shadow-lg hover:shadow-lg rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 pb-2">
                         <img src={assets.navbar_img} />
                         <hr className="py-1" />
-                        <p className="text-medium text-white font-mono text-lg px-4">Card</p>
-                        <p className="px-4 text-medium text-white font-mono text-lg">8 components</p>
+                        <p className="text-medium text-white text-lg px-4">Card</p>
+                        <p className="px-4 text-medium text-white text-lg">8 components</p>
                     </div>
                 </NavLink>
 
@@ -41,32 +41,32 @@ const AllUI = () => {
                     <div className="bg-[#1C1F26] border-2 border-[#343942] shadow-2xl hover:drop-shadow-lg hover:shadow-lg rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 pb-2">
                         <img src={assets.navbar_img} />
                         <hr className="py-1" />
-                        <p className="text-medium text-white font-mono text-lg px-4">Auth</p>
-                        <p className="px-4 text-medium text-white font-mono text-lg">8 components</p>
+                        <p className="text-medium text-white text-lg px-4">Auth</p>
+                        <p className="px-4 text-medium text-white text-lg">8 components</p>
                     </div>
                 </NavLink>
                 <NavLink to='/components/Cookie'>
                     <div className="bg-[#1C1F26] border-2 border-[#343942] shadow-2xl hover:drop-shadow-lg hover:shadow-lg rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 pb-2">
                         <img src={assets.navbar_img} />
                         <hr className="py-1" />
-                        <p className="text-medium text-white font-mono text-lg px-4">Cookie</p>
-                        <p className="px-4 text-medium text-white font-mono text-lg">8 components</p>
+                        <p className="text-medium text-white text-lg px-4">Cookie</p>
+                        <p className="px-4 text-medium text-white text-lg">8 components</p>
                     </div>
                 </NavLink>
                 <NavLink to='/components/Contact'>
                     <div className="bg-[#1C1F26] border-2 border-[#343942] shadow-2xl hover:drop-shadow-lg hover:shadow-lg rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 pb-2">
                         <img src={assets.navbar_img} />
                         <hr className="py-1" />
-                        <p className="text-medium text-white font-mono text-lg px-4">Contact</p>
-                        <p className="px-4 text-medium text-white font-mono text-lg">8 components</p>
+                        <p className="text-medium text-white text-lg px-4">Contact</p>
+                        <p className="px-4 text-medium text-white text-lg">8 components</p>
                     </div>
                 </NavLink>
                 <NavLink to='/components/Table'>
                     <div className="bg-[#1C1F26] border-2 border-[#343942] shadow-2xl hover:drop-shadow-lg hover:shadow-lg rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 pb-2">
                         <img src={assets.navbar_img} />
                         <hr className="py-1" />
-                        <p className="text-medium text-white font-mono text-lg px-4">Table</p>
-                        <p className="px-4 text-medium text-white font-mono text-lg">8 components</p>
+                        <p className="text-medium text-white text-lg px-4">Table</p>
+                        <p className="px-4 text-medium text-white text-lg">8 components</p>
                     </div>
                 </NavLink>
             </div>

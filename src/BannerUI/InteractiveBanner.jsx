@@ -34,10 +34,7 @@ const InteractiveBanner = () => {
         <>
             <div className="text-white mt-20 overflow-x-hidden">
                 <div className="flex flex-col justify-between px-0">
-                    <p className="text-white text-4xl font-mono font-semibold">Banner</p>
-                    <p className="my-5 text-white text-lg text-justify">
-                        The Interactive Banner component is a responsive and interactive navigation bar built with Tailwind CSS and React, featuring a toggleable code preview, copy-to-clipboard functionality, and a collapsible sidebar for smaller screens.
-                    </p>
+                    <p className="text-white text-4xl my-10 font-semibold">Interactive Banner</p>
                     <div className="py-4 px-4 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                         {/* header */}
                         <div className="flex justify-between items-center mb-4">
