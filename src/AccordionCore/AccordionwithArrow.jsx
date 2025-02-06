@@ -48,7 +48,7 @@ const AccordionwithArrow = () => {
                 <p className='text-center py-1'>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-                <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-auto py-10'>
+                <div className='grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-auto py-10'>
                     {faqs.map((faq, index) => (
                         <div key={index} className={\`bg-white shadow-lg w-full rounded-lg transition-all duration-300 ease-in-out \${openAccordion === index ? "h-auto p-2" : "h-20 p-2"}\`}
                             onClick={() => toggleAccordion(index)}
@@ -115,7 +115,7 @@ const AccordionwithArrow = () => {
                             <h3 className='text-3xl text-center font-bold py-4'>Any Questions? Look Here</h3>
                             <p className='text-center py-1'>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-auto py-10'>
+                            <div className='grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-auto py-10'>
                                 {faqs.map((faq, index) => (
                                     <div key={index} className={`bg-white shadow-lg w-full rounded-lg transition-all duration-300 ease-in-out
                         ${openAccordion === index ? "h-auto p-2" : "h-20 p-2"}`}
