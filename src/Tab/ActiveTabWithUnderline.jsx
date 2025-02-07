@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaRegEye, FaCode } from "react-icons/fa";
 import { IoCopy } from "react-icons/io5";
-const NumberedTabs = () => {
+const ActiveTabWithUnderline = () => {
     const [showPreview, setShowPreview] = useState(true)
     const [openTab, setOpenTab] = useState("home")
 
@@ -17,7 +17,7 @@ const NumberedTabs = () => {
 
     const codeSnippet = `
     import React, { useState } from 'react'
-    const SimpleTab = () => {
+    const ActiveTabWithUnderline = () => {
     const [openTab, setOpenTab] = useState("home")
    
     const handleTabOpen = (tabCategory) => {
@@ -32,30 +32,30 @@ const NumberedTabs = () => {
             className={\`cursor-pointer text-black px-4 py-3 text-sm font-medium md:text-base lg:px-6 
             \${
            openTab === "home"
-               ? "bg-blue-700 text-white"
-               : "text-body-color hover:bg-blue-700 hover:text-white dark:text-dark-6 dark:hover:text-white"
+               ? "bg-blue-200 text-white border-b-2 border-blue-500"
+               : "text-body-color hover:bg-blue-200 hover:text-white dark:text-dark-6 dark:hover:text-white"
        } \`}
    >Home</a>
    <a onClick={() => handleTabOpen("about")}
        className={\`cursor-pointer text-black px-4 py-3 text-sm font-medium md:text-base lg:px-6 
        \${openTab === "about"
-               ? "bg-blue-700 text-white"
-               : "text-body-color hover:bg-blue-700 hover:text-white dark:text-dark-6 dark:hover:text-white"
+               ? "bg-blue-200 text-white border-b-2 border-blue-500"
+               : "text-body-color hover:bg-blue-200 hover:text-white dark:text-dark-6 dark:hover:text-white"
        } \`}
                >About Us</a>
    <a onClick={() => handleTabOpen("service")}
                    className={\`cursor-pointer text-black px-4 py-3 text-sm font-medium md:text-base lg:px-6 
                    \${openTab === "service"
-               ? "bg-blue-700 text-white"
-               : "text-body-color hover:bg-blue-700 hover:text-white dark:text-dark-6 dark:hover:text-white"
+               ? "bg-blue-200 text-white border-b-2 border-blue-500"
+               : "text-body-color hover:bg-blue-200 hover:text-white dark:text-dark-6 dark:hover:text-white"
        } \`}
        >Services</a>
        <a onClick={() => handleTabOpen("contact")}
            className={\`cursor-pointer text-black px-4 py-3 text-sm font-medium md:text-base lg:px-6 
        \${
            openTab === "contact"
-           ? "bg-blue-700 text-white"
-           : "text-body-color hover:bg-blue-700 hover:text-white dark:text-dark-6 dark:hover:text-white"
+           ? "bg-blue-200 text-white border-b-2 border-blue-500"
+           : "text-body-color hover:bg-blue-200 hover:text-white dark:text-dark-6 dark:hover:text-white"
        } \`}>
                Contact Us
            </a>
@@ -90,11 +90,11 @@ const NumberedTabs = () => {
    </div>
            )
     }
-    export default SimpleTab
+    export default ActiveTabWithUnderline
        `
     return (
         <div>
-            <h1 className='font-bold my-10 text-3xl'>Number Count with Tab</h1>
+            <h1 className='font-bold my-10 text-3xl'>Normal Tab</h1>
             <div className="py-4 px-4 mt-6 sm:py-6 sm:px-8 rounded-lg drop-shadow-lg w-full backdrop-blur-lg bg-[#1C1F26] border-2 border-[#343942] shadow-2xl">
                 {/* Header */}
                 <div className="flex justify-between items-center mb-4">
@@ -127,34 +127,34 @@ const NumberedTabs = () => {
                             <div className='flex flex-col flex-wrap rounded-lg border border-[#e4e4e4] px-1 py-1 dark:border-dark-3 sm:flex-row'>
                                 <a onClick={() => handleTabOpen("home")}
                                     className={`cursor-pointer text-black px-4 py-3 text-sm font-medium md:text-base lg:px-6 
-                                                    ${openTab === "home"
-                                            ? "bg-blue-700 text-white"
-                                            : "text-body-color hover:bg-blue-700 hover:text-white dark:text-dark-6 dark:hover:text-white"
+                                           ${openTab === "home"
+                                            ? "bg-blue-200 text-white border-b-2 border-blue-500"
+                                            : "text-body-color hover:bg-blue-200 hover:text-white dark:text-dark-6 dark:hover:text-white"
                                         }`}
-                                ><span className='border border-white rounded-full px-1 py-0'>01</span> Home</a>
+                                >Home</a>
 
                                 <a onClick={() => handleTabOpen("about")}
                                     className={`cursor-pointer text-black px-4 py-3 text-sm font-medium md:text-base lg:px-6 
-                                                    ${openTab === "about"
-                                            ? "bg-blue-700 text-white"
-                                            : "text-body-color hover:bg-blue-700 hover:text-white dark:text-dark-6 dark:hover:text-white"
+                                           ${openTab === "about"
+                                            ? "bg-blue-200 text-white border-b-2 border-blue-500"
+                                            : "text-body-color hover:bg-blue-200 hover:text-white dark:text-dark-6 dark:hover:text-white"
                                         }`}
-                                ><span className='border border-white rounded-full px-1 py-0'>02</span> About Us</a>
+                                >About Us</a>
 
                                 <a onClick={() => handleTabOpen("service")}
                                     className={`text-black cursor-pointer px-4 py-3 text-sm font-medium md:text-base lg:px-6
-                                                    ${openTab === "service"
-                                            ? "bg-blue-700 text-white"
-                                            : "text-body-color hover:bg-blue-700 hover:text-white dark:text-dark-6 dark:hover:text-white"
+                                           ${openTab === "service"
+                                            ? "bg-blue-200 text-white border-b-2 border-blue-500"
+                                            : "text-body-color hover:bg-blue-200 hover:text-white dark:text-dark-6 dark:hover:text-white"
                                         }`}
-                                ><span className='border border-white rounded-full px-1 py-0'>03</span> Services</a>
+                                >Services</a>
                                 <a onClick={() => handleTabOpen("contact")}
                                     className={`text-black cursor-pointer px-4 py-3 text-sm font-medium md:text-base lg:px-6
-                                                ${openTab === "contact"
-                                            ? "bg-blue-700 text-white"
-                                            : "text-body-color hover:bg-blue-700 hover:text-white dark:text-dark-6 dark:hover:text-white"
+                                       ${openTab === "contact"
+                                            ? "bg-blue-200 text-white border-b-2 border-blue-500"
+                                            : "text-body-color hover:bg-blue-200 hover:text-white dark:text-dark-6 dark:hover:text-white"
                                         }`}>
-                                    <span className='border border-white rounded-full px-1 py-0'>04</span> Contact Us
+                                    Contact Us
                                 </a>
                             </div>
                             <div className='rounded-lg border border-[#e4e4e4] my-4'>
@@ -199,4 +199,4 @@ const NumberedTabs = () => {
     )
 }
 
-export default NumberedTabs
+export default ActiveTabWithUnderline

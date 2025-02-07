@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom'
 import SimpleTab from '../../Tab/SimpleTab'
 import TabWithIcon from '../../Tab/TabWithIcon'
 import NumberedTabs from '../../Tab/NumberedTabs'
+import ActiveTabWithUnderline from '../../Tab/ActiveTabWithUnderline'
+import ImageGalleryTab from '../../Tab/ImageGalleryTab'
 
 const Tab = () => {
     return (
@@ -53,6 +55,8 @@ const Tab = () => {
             <SimpleTab />
             <TabWithIcon />
             <NumberedTabs />
+            <ActiveTabWithUnderline />
+            <ImageGalleryTab />
         </div>
     )
 }
