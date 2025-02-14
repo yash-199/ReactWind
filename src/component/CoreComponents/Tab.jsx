@@ -31,24 +31,9 @@ const Tab = () => {
                         Tab
                     </p>
                 </NavLink>
-                <NavLink to='/components/Contact'>
+                <NavLink to='/components/HeroSection'>
                     <p className='text-white hover:bg-white duration-300 transition-all hover:text-black border border-white font-bold py-3 px-5 uppercase rounded'>
-                        Contact
-                    </p>
-                </NavLink>
-                <NavLink to='/components/Cookie'>
-                    <p className='text-white hover:bg-white duration-300 transition-all hover:text-black border border-white font-bold py-3 px-5 uppercase rounded'>
-                        Cookie
-                    </p>
-                </NavLink>
-                <NavLink to='/components/Table'>
-                    <p className='text-white hover:bg-white duration-300 transition-all hover:text-black border border-white font-bold py-3 px-5 uppercase rounded'>
-                        Table
-                    </p>
-                </NavLink>
-                <NavLink to='/components/Banner'>
-                    <p className='text-white hover:bg-white duration-300 transition-all hover:text-black border border-white font-bold py-3 px-5 uppercase rounded'>
-                        Banner
+                        Hero Section
                     </p>
                 </NavLink>
             </div>

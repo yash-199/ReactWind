@@ -13,6 +13,7 @@ import AppContactUI from './component/ApplicationUI/AppContactUI.jsx';
 import AppTable from './component/ApplicationUI/AppTable.jsx';
 import Accordion from './component/CoreComponents/Accordion.jsx';
 import Tab from './component/CoreComponents/Tab.jsx';
+import HeroSection from './component/CoreComponents/HeroSection.jsx';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/components/Table" element={<AppTable />} />
         <Route path="/components/Accordion" element={<Accordion />} />
         <Route path="/components/Tab" element={<Tab />} />
+        <Route path='/components/HeroSection' element={<HeroSection />} />
         {/* Add more child routes as needed */}
       </Routes>
       <Footer />
